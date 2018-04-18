@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5" client="site" method="upgrade">
+	<name>Joomla Articles Slideshow</name>
+	<author>Ioannis Fragkioudakis</author>
+	<creationDate>March 2018</creationDate>
+	<copyright>Copyright (C) 2018 Open Source Matters. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>fragioud@gmail.com</authorEmail>
+	<version>1.0.2</version>
+	<description>Displays joomla articles in a responsive CSS slideshow</description>
+	<files>
+		<filename>mod_jarticles_slideshow.xml</filename>
+		<filename module="mod_jarticles_slideshow">mod_jarticles_slideshow.php</filename>
+		<folder>tmpl</folder>
+		<folder>css</folder>
+		<folder>images</folder>
+		<folder>language</folder>
+		<filename>helper.php</filename>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field
+					name="catid"
+					type="category"
+					label="JCATEGORY"
+					description="MOD_LATEST_NEWS_FIELD_CATEGORY_DESC"
+					extension="com_content"
+					multiple="true"
+					size="10"
+					default=""
+					>
+					<option value="">JOPTION_ALL_CATEGORIES</option>
+				</field>
+
+				<field
+					name="show_featured"
+					type="list"
+					label="MOD_LATEST_NEWS_FIELD_FEATURED_LABEL"
+					description="MOD_LATEST_NEWS_FIELD_FEATURED_DESC"
+					default=""
+					>
+					<option value="">JSHOW</option>
+					<option value="0">JHIDE</option>
+					<option value="1">MOD_LATEST_NEWS_VALUE_ONLY_SHOW_FEATURED</option>
+				</field>
+
+				<field
+					name="ordering"
+					type="list"
+					label="MOD_LATEST_NEWS_FIELD_ORDERING_LABEL"
+					description="MOD_LATEST_NEWS_FIELD_ORDERING_DESC"
+					default="published"
+					>
+					<option value="c_dsc">MOD_LATEST_NEWS_VALUE_RECENT_ADDED</option>
+					<option value="m_dsc">MOD_LATEST_NEWS_VALUE_RECENT_MODIFIED</option>
+					<option value="p_dsc">MOD_LATEST_NEWS_VALUE_RECENT_PUBLISHED</option>
+					<option value="mc_dsc">MOD_LATEST_NEWS_VALUE_RECENT_TOUCHED</option>
+					<option	value="random">MOD_LATEST_NEWS_VALUE_RECENT_RAND</option>
+				</field>
+
+				<field
+					name="user_id"
+					type="list"
+					label="MOD_LATEST_NEWS_FIELD_USER_LABEL"
+					description="MOD_LATEST_NEWS_FIELD_USER_DESC"
+					default="0"
+					>
+					<option value="0">MOD_LATEST_NEWS_VALUE_ANYONE</option>
+					<option value="by_me">MOD_LATEST_NEWS_VALUE_ADDED_BY_ME</option>
+					<option value="not_me">MOD_LATEST_NEWS_VALUE_NOTADDED_BY_ME</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+	<updateservers>
+		<server type="extension" priority="1" name="My Extension's Updates">https://github.com/gfragioud/virtuemart-manufacturers-accordion/blob/master/mod_jarticles_slideshow_update.xml</server>
+	</updateservers>
+</extension>

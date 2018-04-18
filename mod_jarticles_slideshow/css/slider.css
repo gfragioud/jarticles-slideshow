@@ -1,0 +1,121 @@
+.jas_slider {
+  border-radius: 4px;
+  box-shadow: 0 4px 10px #9d9d9d;
+  margin: 0 auto;
+  max-width: 100%;
+  overflow: hidden;
+  padding: 0;
+}
+
+.jas_slider ul {
+  animation: jas_slide-animation 15s infinite;
+  -moz-animation:jas_slide-animation 15s infinite;
+  -webkit-animation:jas_slide-animation 15s infinite;
+  height: auto;
+  left: 0;
+  line-height: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: 1000%;
+}
+
+.jas_slider ul:hover {
+  animation-play-state:paused;
+  -moz-animation-play-state:paused;
+  -webkit-animation-play-state:paused;
+}
+
+.jas_slider li {
+  float: left;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 10%;
+}
+
+.jas_slider img {
+  border-radius: 4px;
+  max-width: 100%;
+}
+
+.jas_slider span {
+  background-color: rgb(54,44,48);
+  background-color:rgba(54,44,48,0.6);
+  border-radius: 4px;
+  bottom: 0;
+  color: #fcfcfc;
+  display: block;
+  font-size: 0.8em;
+  font-weight: normal;
+  height: 80px;
+  margin-top: -80px;
+  overflow: hidden;
+  padding: 0.5px 20px 0 20px;
+  position: relative;
+  text-shadow: 0 1px 1px #9d9d9d;
+}
+
+.jas_slider h4 {
+  align-items: center;
+  display: flex;
+	font-size: 1.6em;
+	height: 100%;
+	line-height: 1.3em;
+}
+
+@keyframes jas_slide-animation {
+  1% {left: 0; opacity: 1;}
+  18% {left: 0; opacity: 1}
+  19% {opacity: 0.2;}
+  20% {left: -100%; opacity: 1;}
+  38% {left: -100%; opacity: 1;}
+  39% {opacity: 0.2;}
+  40% {left: -200%; opacity: 1;}
+  58% {left: -200%; opacity: 1;}
+  59% {opacity: 0.2;}
+  60% {left: -300%; opacity: 1;}
+  78% {left: -300%; opacity: 1;}
+  79% {opacity: 0.2;}
+  80% {left: -400%; opacity: 1;}
+  98% {left: -400%; opacity: 1;}
+  99% {opacity: 0.5;}
+  100% {left: 0;}
+}
+@-webkit-keyframes jas_slide-animation {
+  1% {left: 0; opacity: 1;}
+  18% {left: 0; opacity: 1}
+  19% {opacity: 0.2;}
+  20% {left: -100%; opacity: 1;}
+  38% {left: -100%; opacity: 1;}
+  39% {opacity: 0.2;}
+  40% {left: -200%; opacity: 1;}
+  58% {left: -200%; opacity: 1;}
+  59% {opacity: 0.2;}
+  60% {left: -300%; opacity: 1;}
+  78% {left: -300%; opacity: 1;}
+  79% {opacity: 0.2;}
+  80% {left: -400%; opacity: 1;}
+  98% {left: -400%; opacity: 1;}
+  99% {opacity: 0.5;}
+  100% {left: 0;}
+}
+@-moz-keyframes jas_slide-animation {
+  1% {left: 0; opacity: 1;}
+  18% {left: 0; opacity: 1}
+  19% {opacity: 0.2;}
+  20% {left: -100%; opacity: 1;}
+  38% {left: -100%; opacity: 1;}
+  39% {opacity: 0.2;}
+  40% {left: -200%; opacity: 1;}
+  58% {left: -200%; opacity: 1;}
+  59% {opacity: 0.2;}
+  60% {left: -300%; opacity: 1;}
+  78% {left: -300%; opacity: 1;}
+  79% {opacity: 0.2;}
+  80% {left: -400%; opacity: 1;}
+  98% {left: -400%; opacity: 1;}
+  99% {opacity: 0.5;}
+  100% {left: 0;}
+}
