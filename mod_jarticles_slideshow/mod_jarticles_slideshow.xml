@@ -6,7 +6,7 @@
 	<copyright>Copyright (C) 2018 Open Source Matters. All rights reserved.</copyright>
 	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
 	<authorEmail>fragioud@gmail.com</authorEmail>
-	<version>1.0.2</version>
+	<version>1.0.3</version>
 	<description>Displays joomla articles in a responsive CSS slideshow</description>
 	<files>
 		<filename>mod_jarticles_slideshow.xml</filename>
@@ -74,6 +74,6 @@
 		</fields>
 	</config>
 	<updateservers>
-		<server type="extension" priority="1" name="My Extension's Updates">https://github.com/gfragioud/virtuemart-manufacturers-accordion/blob/master/mod_jarticles_slideshow_update.xml</server>
+		<server type="extension" priority="1" name="My Extension's Updates">https://github.com/gfragioud/jarticles-slideshow/blob/master/mod_jarticles_slideshow_update.xml</server>
 	</updateservers>
 </extension>
